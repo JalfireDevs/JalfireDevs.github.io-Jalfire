@@ -11,6 +11,11 @@
             Today I decided to refine my target lock on system. Previously it just locked onto the closest enemy, and it kept it centered. Theres a few problems with this.
             First keeping the target directly in the center makes the camera feel stiff. Second we want to be able to lock onto the target that the player wants, and that isnt
             always the closest target.
+            
+            I decided to solve the second issue first. My first solution was to lock onto the enemy that is closest to the center of the screen, so the target that gets locked onto is
+            the one the player is looking at. This feels way better but it still not perfect. When theres an enemy who way up close to you that you want to target but another and further
+            enemy is slightly closer to the screen center, it will target the further on still. the solution to this is pretty simple. We will take both the distance and how centered the
+            target is into consideration.
         </p>
     </body>
 </html>
